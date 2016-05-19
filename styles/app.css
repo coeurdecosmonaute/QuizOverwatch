@@ -4015,7 +4015,7 @@ table.hover tr:nth-of-type(even):hover {
 
 footer {
   background-color: #102e56;
-  padding:rem-calc (60 0 0 60 );
+  padding:rem-calc(0 0 0 0) ;
   color:white;
 }
 
@@ -4029,13 +4029,17 @@ footer {
 
 }
 
-#termscond {
+.legalesblizzard {
   font-size: 13px;
 }
 
 #seguiroverwatch {
-  font-size: 14px;
+  font-size: 12px;
 }
 
+.seleccion-idioma {
+  font-size: 14px;
+  color: #8eb1bc;
+}
 
 
