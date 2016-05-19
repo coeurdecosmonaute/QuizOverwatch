@@ -4012,3 +4012,30 @@ table.hover tr:nth-of-type(even):hover {
 
 .long-delay {
   animation-delay: 700ms !important; }
+
+footer {
+  background-color: #102e56;
+  padding:rem-calc (60 0 0 60 );
+  color:white;
+}
+
+
+#legalesBlizzardlogo {
+  float:left;
+}
+
+#legalesblizzardtexto {
+  font-size: 11px;
+
+}
+
+#termscond {
+  font-size: 13px;
+}
+
+#seguiroverwatch {
+  font-size: 14px;
+}
+
+
+
