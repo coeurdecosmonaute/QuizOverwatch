@@ -26,50 +26,296 @@ body {
   margin: 0; 
 }
 
-
-.logo{
- background: url(../assets/home/Overwatch_logoB.png);
- height: 71px;
- width: 466px;
+@font-face {
+    font-family: bigNoodleToo;
+    src: url(fonts/Big_Noodle_Too.ttf);
 }
 
-.heroes{
-  background: url(../assets/home/Logo_intro.png);
-  width: 794px;
-  height: 629px;
-  margin: 0 auto;
+@font-face {
+    font-family: BigNoodleTooOblique;
+    src: url(fonts/BigNoodleTooOblique.ttf);
 }
 
-.social-container{
-  margin: 45% 4% 0px;
+@font-face {
+    font-family: FuturaBookfont;
+    src: url(fonts/Futura_Book_font.ttf);
 }
 
-.twitter{
-  background: url(../assets/home/Bt_Ingresa_Twitter.png) no-repeat;
-  width: 464px;
-  height: 189px;
-  cursor: pointer;
-  background-size: 396px;
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+
+        .logo{
+         background: url(../assets/home/Overwatch_logoB.png) no-repeat;
+         height: 71px;
+         width: 466px;
+         background-size: 75%;
+         margin-top: 40px;
+        }
+
+        .heroes{
+          background: url(../assets/home/Logo_intro.png) no-repeat;
+          width: 794px;
+          height: 629px;
+          margin: 0 auto;
+          background-size: 75%;
+          background-position: 50%;
+        }
+
+        .social-container{
+          margin: 45% 4% 0px;
+        }
+
+        .twitter{
+          background: url(../assets/home/Bt_Ingresa_Twitter.png) no-repeat;
+          width: 464px;
+          height: 189px;
+          cursor: pointer;
+          background-size: 396px;
+        }
+
+        .facebook{
+          background: url(../assets/home/Bt_Ingresa_Facebook.png) no-repeat;
+          width: 464px;
+          height: 189px;
+          cursor: pointer;
+          background-size: 396px;
+          margin-left: -80px;
+        }
+
+        .contesta-responde{
+          background-color: rgba(22,75,173,.7);
+          border-radius: 8px;
+          width: 602px;
+          height: 207px;
+          box-shadow: #000 3px 3px 28px;
+          margin: 0 auto;
+          overflow: hidden;
+          padding-top: 27px;
+        }
+
+        #cual_eres{
+          font-family: BigNoodleTooOblique;
+          color: #FFF;
+          font-size: 50px;
+          text-align: center;
+          margin-bottom: 0px;
+          height: 30%;
+        }
+
+        #contesta_descubre{
+          font-family: BigNoodleTooOblique;
+          color: #FFF;
+          font-size: 25px;
+          text-align: center;
+          height: 8%;
+        }
+
+        #que_eres{
+          font-family: BigNoodleTooOblique;
+          color: #FFCE00;
+          font-size: 40px;
+          text-align: center;
+          margin-bottom: 0px;
+        }
+
+        .imagen-esrb{
+          background: url(../assets/home/footer/Teen_esrb.png);
+          width: 128px;
+          height: 82px;
+        }
+
+        .LogoBlizzard{
+          background: url(../assets/home/footer/Blizzard_logo.png) no-repeat;
+          width: 133px;
+          height: 71px;
+          float: left;
+          height: 155px;
+          margin-right: 23px;
+        }
+
+        .seleccion-idioma{
+          margin-top: 10px;
+        }
+
+        .idioma{
+          width: 240px;
+          font-size: 12px;
+          background: transparent;
+          color: #FFF;
+          border: 0;
+        }
+
+        .visita-overwatch{
+          background: url(../assets/home/footer/Bt_VisitaOver.png) no-repeat;
+          float: left;
+        }
+
+        .logo-youtube{
+          background: url(../assets/home/footer/logo_youtube.png) no-repeat;
+          width: 34px;
+          height: 37px; 
+          float: left;
+        }
+
+        .logo-facebook{
+          background: url(../assets/home/footer/logo_facebook.png) no-repeat;
+          width: 34px;
+          height: 37px; 
+          float: left;
+        }
+
+        .logo-twitter{
+          background: url(../assets/home/footer/logo_twitter.png) no-repeat;
+          width: 34px;
+          height: 37px; 
+          float: left;
+        }
 }
 
-.facebook{
-  background: url(../assets/home/Bt_Ingresa_Facebook.png) no-repeat;
-  width: 464px;
-  height: 189px;
-  cursor: pointer;
-  background-size: 396px;
-  margin-left: -80px;
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+
+        .logo {
+            background: url(../assets/home/Overwatch_logoB.png) no-repeat;
+            height: 71px;
+            width: 100%;
+            margin-top: 40px;
+            margin: 0 auto;
+            background-size: 100%;
+        }
+
+        .heroes {
+            background: url(../assets/home/Logo_intro.png) no-repeat;
+            width: 100%;
+            height: 629px;
+            margin: 0 auto;
+            background-size: 100%;
+        }
+
+        .social-container{
+          margin: 45% 4% 0px;
+        }
+
+        .twitter {
+            background: url(../assets/home/Bt_Ingresa_Twitter.png) no-repeat;
+            width: 464px;
+            height: 189px;
+            cursor: pointer;
+            background-size: 100%;
+            margin-top: -90px;
+        }
+
+        .facebook {
+            background: url(../assets/home/Bt_Ingresa_Facebook.png) no-repeat;
+            width: 464px;
+            height: 189px;
+            cursor: pointer;
+            background-size: 100%;
+            margin-left: -50px;
+            margin-top: 96px;
+        }
+
+        .contesta-responde {
+            background-color: rgba(22,75,173,.7);
+            border-radius: 8px;
+            width: 338px;
+            height: 207px;
+            box-shadow: #000 3px 3px 28px;
+            overflow: hidden;
+            padding-top: 27px;
+            display: inline-block;
+            position: relative;
+            left: -44px;
+            top: -100px;
+        }
+
+          #cual_eres {
+            font-family: BigNoodleTooOblique;
+            color: #FFF;
+            font-size: 25px;
+            /* text-align: center; */
+            height: 8%;
+            margin-left: 35px;
+          }
+
+          #contesta_descubre{
+            font-family: BigNoodleTooOblique;
+            color: #FFF;
+            font-size: 25px;
+            height: 8%;
+            margin-left: 35px;
+          }
+
+          #que_eres{
+                font-family: BigNoodleTooOblique;
+                color: #FFCE00;
+                font-size: 28px;
+                /* text-align: center; */
+                margin-bottom: 0px;
+                margin-left: 31px;
+          }
+
+          .disclaimer{
+            text-align: left;
+            clear: both;
+            margin-top: 51px;
+          }
+
+          .imagen-esrb{
+            background: url(../assets/home/footer/Teen_esrb.png);
+            width: 128px;
+            height: 82px;
+          }
+
+          .LogoBlizzard{
+            background: url(../assets/home/footer/Blizzard_logo.png) no-repeat;
+            width: 133px;
+            height: 71px;
+            float: left;
+            height: 155px;
+            margin-right: 23px;
+          }
+
+          .idioma{
+            width: 240px;
+            font-size: 12px;
+            background: transparent;
+            color: #FFF;
+            border: 0;
+          }
+
+          .logo-youtube{
+            background: url(../assets/home/footer/logo_youtube.png) no-repeat;
+            width: 34px;
+            height: 37px; 
+          }
+
+          .logo-facebook{
+            background: url(../assets/home/footer/logo_facebook.png) no-repeat;
+            width: 34px;
+            height: 37px; 
+          }
+
+          .logo-twitter{
+            background: url(../assets/home/footer/logo_twitter.png) no-repeat;
+            width: 34px;
+            height: 37px; 
+          }
+
+          .enlaces-footer{
+            font-size: 10px;
+            clear: both;
+          }
+
 }
 
-.contesta-responde{
-  background-color: rgba(22,75,173,.7);
-  border-radius: 8px;
-  width: 602px;
-  height: 207px;
-  box-shadow: #000 3px 3px 28px;
-  margin: 0 auto;
-  overflow: hidden;
-}
+
+
 
 /* HTML5 display definitions
      ========================================================================== */
