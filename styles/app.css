@@ -203,9 +203,15 @@ and (min-width : 768px) {
 
         .div-pregunta:hover{
           transform: scale(1.1);
-          background: url(../assets/Preguntas/Marco_Over.png) no-repeat;
-          background-size: 100%;
-          z-index: 2000;
+          /*background: url(../assets/Preguntas/Marco_Over.png) no-repeat;
+          background-size: 95% 100%;
+          background-position: 60px 0px 0px 0px;*/
+        }
+
+        .div-focus{
+           background: url(../assets/Preguntas/Marco_Over.png) no-repeat;  
+           width: 250px;
+           height: 320px;
         }
 
         .div-texto-pregunta{
