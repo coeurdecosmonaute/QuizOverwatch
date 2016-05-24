@@ -280,6 +280,18 @@ and (min-width : 768px) {
             color: white;
             font-size: 40px;
           }
+
+          li.arrow{
+            display: none!important;
+          }
+
+          li.numero-pagina{
+            border: 1px solid #FFF;
+          }
+
+          li.numero-pagina > a {
+            color: #FFF;
+          }
 }
 
 
@@ -3508,9 +3520,13 @@ body {
     .pagination button:hover {
       background: #e6e6e6; }
   .pagination .current {
-    padding: 0.1875rem 0.625rem;
-    background: #2199e8;
+    
+    background: #FFF;
     color: #fefefe;
+    cursor: default; }  
+    .pagination .current > a{
+    
+    color: #000;
     cursor: default; }
   .pagination .disabled {
     padding: 0.1875rem 0.625rem;
