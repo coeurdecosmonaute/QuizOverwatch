@@ -221,12 +221,19 @@ and (min-width : 768px) {
         }
 
         .div-pregunta > img, .div-pregunta > div{
-          display: block;
+          display: table;
           margin: auto;
           vertical-align: middle;
           max-height: 438px;
           max-width: 324px;
           line-height: 23px;
+        }
+
+        p.texto-pregunta{
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          line-height:  1.1;
         }
 
         .div-pregunta:hover{
@@ -250,24 +257,30 @@ and (min-width : 768px) {
           display: table-cell;
           vertical-align: middle;
           height: 90px;
-          width: 250px;
+          width: 212px;
           background-color: rgba(255, 255, 255, 0.61);
           position: relative;
           bottom: 90px;
+        }
+
+        .imagenes-preg{
+          width: 212px;
+          height: 271px;
         }
 
         .resultado-quiz{
             background-color: rgba(22,75,173,.7);
             border-radius: 8px;
             width: 605px;
-            height: 360px;
+            height: 100%;
             box-shadow: #000 3px 3px 28px;
             overflow: hidden;
-            padding-top: 27px;
+            padding: 20px;
             display: inline-block;
             position: relative;
-            left: -44px;
-            top: -100px;
+            /*width: 47%!important;*/
+/*            left: -44px;
+            top: -100px;*/
           }
 
 
@@ -281,6 +294,7 @@ and (min-width : 768px) {
                 font-family: BigNoodleTooOblique;
                 color: #FFCE00;
                 font-size: 120px;
+                line-height: .9;
                 /* text-align: center; */
                 /*margin-bottom: 0px;
                 margin-left: 31px;*/
@@ -296,6 +310,13 @@ and (min-width : 768px) {
             font-family: BigNoodleTooOblique;
             color:white;
             font-size: 40px;
+            display: inline-block;
+          }
+
+          .wallpapers-contenedor{
+            float: left;
+            display: table;
+            margin-top: -500px;
           }
 
           .formatos-descarga{
@@ -321,6 +342,11 @@ and (min-width : 768px) {
           li.numero-pagina > a {
             color: #FFF;
           }
+
+          #imagen-heroe{ 
+          min-width: 734px;
+          min-height: 943px;
+        }
 }
 
 
@@ -496,6 +522,24 @@ and (max-width : 320px) {
             bottom: 90px;
           }
 
+          .resultado-quiz{
+              background-color: rgba(22,75,173,.7);
+              border-radius: 8px;
+              width: 605px;
+              height: 100%;
+              box-shadow: #000 3px 3px 28px;
+              overflow: hidden;
+              padding: 20px;
+              display: inline-block;
+              position: relative;
+            }
+
+            .wallpapers-contenedor{
+              float: left;
+              /*margin-top: -300px;*/
+              display: table;
+            }
+
 
 }
 
@@ -652,9 +696,20 @@ and (max-width : 480px)
       margin-top: 80px;
     }
 
-    .div-pregunta{
-      
-    }
+    .resultado-quiz{
+        background-color: rgba(22,75,173,.7);
+        border-radius: 8px;
+        width: 605px;
+        height: 360px;
+        box-shadow: #000 3px 3px 28px;
+        overflow: hidden;
+        padding: 20px;
+        display: inline-block;
+        position: relative;
+        width: 47%!important;
+/*            left: -44px;
+        top: -100px;*/
+      }
 
     .div-texto-pregunta{
       font-family: FuturaBookfont;
@@ -822,6 +877,8 @@ and (max-width : 480px)
                     
                   }
 
+
+
                   .div-texto-pregunta{
                     font-family: FuturaBookfont;
                     font-size: 19px;
@@ -837,7 +894,97 @@ and (max-width : 480px)
 
   }
 
+  @media only screen
+  and (min-width : 320px)
+  and (max-width : 639px){
 
+          .resultado-quiz{
+              background-color: rgba(22,75,173,.7);
+              border-radius: 8px;
+              width: 605px;
+              height: 360px;
+              box-shadow: #000 3px 3px 28px;
+              overflow: hidden;
+              padding: 20px;
+              display: inline-block;
+              position: relative;
+              width: 100%;
+  /*            left: -44px;
+              top: -100px;*/
+            }
+
+            #Tu_heroe{
+              font-family: FuturaBookfont;
+              color: white;
+              font-size: 48px;
+            }
+
+            #Nombre_heroe{
+                  font-family: BigNoodleTooOblique;
+                  color: #FFCE00;
+                  font-size: 120px;
+                  line-height: .9;
+                  /* text-align: center; */
+                  /*margin-bottom: 0px;
+                  margin-left: 31px;*/
+            }
+
+            #descripcion_heroe{
+              font-family: FuturaBookfont;
+              color: white;
+              font-size: 18px;
+            }
+}
+
+@media only screen
+and (min-width : 640px)
+and (max-width : 767px){
+
+          .resultado-quiz{
+              background-color: rgba(22,75,173,.7);
+              border-radius: 8px;
+              width: 605px;
+              height: 100%;
+              box-shadow: #000 3px 3px 28px;
+              overflow: hidden;
+              padding: 20px;
+              display: inline-block;
+              position: relative;
+              width: 100%;
+  /*            left: -44px;
+              top: -100px;*/
+            }
+
+            #Tu_heroe{
+              font-family: FuturaBookfont;
+              color: white;
+              font-size: 48px;
+            }
+
+            #Nombre_heroe{
+                  font-family: BigNoodleTooOblique;
+                  color: #FFCE00;
+                  font-size: 120px;
+                  line-height: .9;
+                  /* text-align: center; */
+                  /*margin-bottom: 0px;
+                  margin-left: 31px;*/
+            }
+
+            #descripcion_heroe{
+              font-family: FuturaBookfont;
+              color: white;
+              font-size: 18px;
+            }
+
+            #Descarga-wall{
+              font-family: BigNoodleTooOblique;
+              color:white;
+              font-size: 40px;
+              display: inline-block;
+            }
+
+}
 
 /* HTML5 display definitions
      ========================================================================== */
